@@ -26,7 +26,9 @@
       }
     }
   }
-
+  
+  jira_pid = 10401; 
+  
   if (jira_url && jira_key && jira_pid) {
     $('.board_header .navbar ul.nav').append('<li><a href="' + jira_url + '/browse/' + jira_key + '" target="_blank" id="jiraProject"><i class="icon-et-link"></i> ' + jira_key + '</a></li>');
     $(document).bind('card_open', function() {
